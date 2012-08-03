@@ -10,6 +10,9 @@ namespace ServerSideTimeR
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-1.*"));
 
+            bundles.Add(new ScriptBundle("~/bundles/SignalR").Include(
+            "~/Scripts/jquery.SignalR*"));
+
             bundles.Add(new ScriptBundle("~/bundles/sstimer").Include(
                         "~/Scripts/sstimer-*"));
 

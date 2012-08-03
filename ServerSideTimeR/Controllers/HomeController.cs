@@ -10,23 +10,14 @@ namespace ServerSideTimeR.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Modify this template to kick-start your ASP.NET MVC application.";
+            ViewBag.Message = "Exploring Connect, Disconnect and Reconnect in SignalR";
 
             return View();
         }
 
-        public ActionResult About()
+        public JsonResult GetPageInfo(int page)
         {
-            ViewBag.Message = "Your app description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            return Json(new { name = "Page Number", number = page });
         }
     }
 }

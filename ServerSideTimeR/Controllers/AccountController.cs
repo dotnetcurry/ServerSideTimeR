@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 using ServerSideTimeR.Models;
+using ServerSideTimeR.Hubs;
 
 namespace ServerSideTimeR.Controllers
 {
@@ -59,6 +60,7 @@ namespace ServerSideTimeR.Controllers
 
         public ActionResult LogOff()
         {
+            ConnectionCache.Instance.Logout(HttpContext.User.Identity.Name);
             FormsAuthentication.SignOut();
 
             return RedirectToAction("Index", "Home");

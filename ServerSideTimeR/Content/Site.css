@@ -767,3 +767,37 @@ tr.pager td {
             text-indent: 0;
         }
 }
+
+.ss-wizard-page-header
+{
+    background-color: #FEFEFE;
+    padding: 2px;
+}
+
+.ss-wizard-header
+{
+    background-color: #F0F0F0;
+    border: 1px solid gray;
+    padding: 2px;
+}
+
+.ss-wizard-footer
+{
+    background-color: #F0F0F0;
+    border: 1px solid gray;
+    padding: 2px;
+}
+
+.ss-wizard-content
+{
+    background-color: #F0F0F0;
+    border: 1px solid gray;
+    padding: 2px;
+}
+
+.ss-wizard
+{
+    width: 400px;
+    border: 1px solid #0F0F0F;
+    
+}
